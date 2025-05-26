@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "841210640881",
+    "project_id": "chat-app-by-qwilton",
+    "storage_bucket": "chat-app-by-qwilton.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841210640881:android:b8a7058f3825fc0e342c50",
+        "android_client_info": {
+          "package_name": "com.example.messenger_by_qwilton"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7oKfz880XUY2oDEzFxxhFQv3gXoUQ92w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
