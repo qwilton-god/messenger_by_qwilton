@@ -10,7 +10,7 @@ plugins {
 
 android {
     namespace = "com.example.messenger_by_qwilton"
-    compileSdk = 34
+    compileSdk = flutter.compileSdkVersion
     ndkVersion = "27.0.12077973"
 
     compileOptions {
@@ -27,11 +27,11 @@ android {
         applicationId = "com.example.messenger_by_qwilton"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = 21
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
-        multiDexEnabled = true
+        minSdk = 23
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+        
     }
 
     buildTypes {
@@ -39,19 +39,8 @@ android {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.getByName("debug")
-            isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
-
-    lint {
-        disable += "InvalidPackage"
-    }
-}
-
-dependencies {
-    implementation("androidx.multidex:multidex:2.0.1")
-    implementation(platform("com.google.firebase:firebase-bom:32.7.2"))
 }
 
 flutter {
