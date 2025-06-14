@@ -4,8 +4,14 @@ import 'package:firebase_auth/firebase_auth.dart';
 import '../../model/message.dart';
 
 class ChatService extends ChangeNotifier {
-  final FirebaseFirestore _fireStore = FirebaseFirestore.instance;
-  final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
+  final FirebaseFirestore _fireStore;
+  final FirebaseAuth _firebaseAuth;
+
+  ChatService({
+    FirebaseFirestore? firestore,
+    FirebaseAuth? firebaseAuth,
+  })  : _fireStore = firestore ?? FirebaseFirestore.instance,
+        _firebaseAuth = firebaseAuth ?? FirebaseAuth.instance;
 
   Future<void> sendMessage(String receiverId, String message) async {
     final String currentUserId = _firebaseAuth.currentUser!.uid;
