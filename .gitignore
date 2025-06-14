@@ -4,7 +4,6 @@
 /build/
 .packages
 .pub/
-/test/mocks.mocks.dart
 /android/.gradle/
 /android/.idea/
 /android/build/
