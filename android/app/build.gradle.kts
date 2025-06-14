@@ -10,7 +10,7 @@ plugins {
 
 android {
     namespace = "com.example.messenger_by_qwilton"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 31
     ndkVersion = "27.0.12077973"
 
     compileOptions {
