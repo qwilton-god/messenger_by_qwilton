@@ -29,7 +29,8 @@ jobs:
       uses: android-actions/setup-android@v3
     
     - name: Accept Android licenses
-      run: flutter doctor --android-licenses --yes
+      run: |
+        yes | flutter doctor --android-licenses
     
     - name: Install dependencies
       run: flutter pub get
