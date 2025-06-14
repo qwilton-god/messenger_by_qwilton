@@ -1,5 +1,7 @@
 # Мессенджер
 
+[![Tests](https://github.com/qwilton-god/messenger_by_qwilton/actions/workflows/test.yml/badge.svg)](https://github.com/qwilton-god/messenger_by_qwilton/actions/workflows/test.yml)
+
 Мессенджер - это приложение для обмена сообщениями, разработанное на основе Flutter и Firebase.
 
 ## О приложении
@@ -25,3 +27,10 @@
 2. Авторизоваться или зарегистрироваться
 3. Начать чат с другим пользователем
 4. Отправить текстовое сообщение
+
+## Тестирование
+
+Для запуска тестов выполните команду:
+```bash
+flutter test
+```
