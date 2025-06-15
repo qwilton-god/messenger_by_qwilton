@@ -55,10 +55,10 @@ class _LoginPageState extends State<LoginPage> {
                                             color: const Color(0xFFC8E4CA),
                                             borderRadius: BorderRadius.circular(4),
                                         ),
-                                        child: Icon(
+                                        child: const Icon(
                                             Icons.message,
                                             size: 80,
-                                            color: const Color(0xFF672a43),
+                                            color: Color(0xFF672a43),
                                         ),
                                     ),
                                     const SizedBox(height: 30),
