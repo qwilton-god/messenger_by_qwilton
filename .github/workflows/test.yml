@@ -29,4 +29,16 @@ jobs:
       run: flutter pub get
     
     - name: Run tests
-      run: flutter test 
+      run: flutter test
+      continue-on-error: false
+      
+    - name: Check test results
+      if: always()
+      run: |
+        if [ ${{ job.status }} == 'success' ]; then
+          echo "Tests passed successfully"
+          exit 0
+        else
+          echo "Tests failed"
+          exit 1
+        fi 
